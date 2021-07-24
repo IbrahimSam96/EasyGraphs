@@ -6,10 +6,16 @@ import ViewGraph from "../../../../Components/viewGraph";
 
 import ViewTextBox from "../../../../Components/viewText";
 
-import {TwitterIcon,LinkedinIcon,WhatsappIcon,RedditIcon} from "react-share";
 import moment from 'moment';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import Modal from 'react-bootstrap/Modal';
+
+import {
+    TwitterShareButton,
+    TwitterIcon,
+    LinkedinShareButton,
+    LinkedinIcon
+  } from 'next-share'
 
 export const getServerSideProps = async (context) => {
 
@@ -300,10 +306,21 @@ return (
 
 <div className="CreatorInfo">
 
-<TwitterIcon href={`https://easy-graphs.vercel.app/${props.routeU}/${props.routeD}`} round={true} />
-<LinkedinIcon url={`https://easy-graphs.vercel.app/${props.routeU}/${props.routeD}`}  round={true} />
-{/* <WhatsappIcon url={`https://localhost:3000/${props.routeU}/${props.routeD}`}size={32} round={true} size={32} round={true} />
-<RedditIcon url={`https://localhost:3000/${props.routeU}/${props.routeD}`}  size={32} round={true} size={32} round={true} /> */}
+<TwitterShareButton
+  url={`https://easy-graphs.vercel.app/${props.routeU}/${props.routeG}`} 
+  title={''}
+>
+  <TwitterIcon size={42} round />
+</TwitterShareButton>
+
+
+<LinkedinShareButton   
+url={`https://easy-graphs.vercel.app/${props.routeU}/${props.routeG}`}
+title={''}
+>
+  <LinkedinIcon size={42} round />
+</LinkedinShareButton>
+
 
  
 </div>
@@ -311,6 +328,8 @@ return (
 <span className="EditInfo"> <a href={`/edit/${props.uid}/${props.routeG}`}> Edit </a></span>
 
 <span className="EditInfo2"> <VisibilityIcon /> </span>
+
+
 
 
 </>

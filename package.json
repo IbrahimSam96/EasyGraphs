@@ -23,6 +23,7 @@
     "moment": "^2.29.1",
     "next": "^10.2.0",
     "next-firebase-auth": "^0.13.0-alpha.4",
+    "next-share": "^0.7.0",
     "next-videos": "^1.4.0",
     "nookies": "^2.5.2",
     "react": "^17.0.2",
