@@ -26,7 +26,7 @@ import GithubButton from 'react-github-login-button'
     
 <div className="login-box">
         
-    <h2>Login</h2>
+    <h2>Login With Email</h2>
     <form>
     <div className="user-box">
     
@@ -95,6 +95,7 @@ import GithubButton from 'react-github-login-button'
 
 <GoogleButton 
 className="Google-Button2"
+label='Login with Google'
   onClick={ async () => { 
     await  firebaseClient.auth()
     .signInWithPopup(provider)
@@ -127,6 +128,7 @@ className="Google-Button2"
 
 <GithubButton
 className="Github-Button2"
+label='Login with Github'
   onClick={ async () => { 
     await  firebaseClient.auth()
     .signInWithPopup(providerGithub)

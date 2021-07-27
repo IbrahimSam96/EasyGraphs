@@ -262,19 +262,16 @@ display: inline-block;
 
 
 .getStarted {
-
-  max-width: 750px;
-  padding: 45px;
-
- 
-  grid-column: 6/11;
+ align-self: center;
+ justify-self: center;
+  grid-column: 5/8;
   grid-row: 15/15;
 }
 
 .getStarted a{
   font-family: Trebuchet MS,  Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #c7c9d3;
+  color: whitesmoke;
   font-size: 3rem;
   letter-spacing: 2px;
   cursor: pointer;
@@ -1568,10 +1565,17 @@ border: 2px solid #c7c9d3;
  visibility: visible;
 }
 
+.hodl a{
+  text-decoration: none;
+  color: white;
+}
 .hodl:hover span {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   text-shadow: 0 0 10px #fff;     
+}
+.hodl:hover a {
+  color: #F43B5F;
 }
 
 
@@ -2497,18 +2501,17 @@ body  .Main{
   
   .getStarted {
   
-    padding: 45px;
-  
-   
-    grid-column: 1/15;
-    grid-row: 16/17;
+    align-self: center;
+ justify-self: center;
+  grid-column: 5/8;
+  grid-row: 15/15;
   }
   
   .getStarted a{
     font-family: Trebuchet MS,  Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: #c7c9d3;
-    font-size: 2.5rem;
+    color: whitesmoke;
+    font-size: 2.0rem;
     letter-spacing: 2px;
     cursor: pointer;
     white-space: nowrap;
@@ -2611,7 +2614,7 @@ body  .Main{
   background-color: #000428;
   box-shadow: rgba(0,0,0,.5) 0px 0px 20px 0px; 
   
-  z-index: 5000;
+  z-index: 00;
   }
   
   .designBar1{
@@ -2740,12 +2743,12 @@ body  .Main{
     color: white;
     font-family: Trebuchet MS,  Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    
+    overflow: auto;
   
     top: 100px;
-    left: -125px;
-    width: 850px!important;
-    max-width: 1500px;
+    left: 0px;
+   
+    z-index: 500;
   }
   
    div .modal-header{ 
@@ -2753,13 +2756,13 @@ body  .Main{
      grid-template-columns: repeat(4, 1fr);
      grid-template-rows: repeat(1, 75px);
   
-  
+     overflow: auto;
   }
   
   .inputtitle{
     grid-column: 1/1;
     grid-row: 1/1;
-    padding: 12px 20px;
+    padding: 6px 10px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -2776,7 +2779,7 @@ body  .Main{
         grid-column: 4/4;
         align-self: center; 
         justify-self: end;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         cursor: pointer;
       }
   
@@ -2788,7 +2791,7 @@ body  .Main{
    div .modal-header .MuiSvgIcon-root:nth-child(2){
      grid-column: 5/5;
      align-self: start; 
-     font-size: 2.5rem;
+     font-size: 1.5rem;
      cursor: pointer;
    }
   
@@ -2802,7 +2805,7 @@ body  .Main{
      display: grid;
      grid-template-columns: repeat(6, 1fr);
      grid-template-rows: repeat(8, 85px);
-   
+   overflow: auto;
     }
   
   
@@ -2820,7 +2823,7 @@ body  .Main{
   grid-row: 1/1;
   
   justify-self: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   
   }
   
@@ -2829,7 +2832,7 @@ body  .Main{
   grid-row: 1/1;
   
   justify-self: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   
   }
   
@@ -2838,7 +2841,7 @@ body  .Main{
     grid-row: 1/1;
     
     justify-self: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     
     }
     
@@ -2847,7 +2850,7 @@ body  .Main{
     grid-row: 1/1;
     
     justify-self: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     
     }
   
@@ -3396,11 +3399,12 @@ body  .Main{
     grid-row: 1/1;
     align-self: flex-end;
     justify-self:center;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   font-family: Trebuchet MS,  Arial, sans-serif;
   color: #c7c9d3;
-  }
   
+  }
+
   .EditInfo a:hover{
   color: #f43b5f;
   }
@@ -3417,7 +3421,7 @@ body  .Main{
   }
 
   .EditInfo2 .MuiSvgIcon-root{
-    font-size: 1.0rem;
+    font-size: 0.8rem;
   }
   
   .EditInfo2 .MuiSvgIcon-root:hover{
@@ -3791,10 +3795,17 @@ body  .Main{
    visibility: visible;
   }
   
+  .hodl a{
+    text-decoration: none;
+    color: white;
+  }
   .hodl:hover span {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     text-shadow: 0 0 10px #fff;     
+  }
+  .hodl:hover a {
+    color: #F43B5F;
   }
   
   

@@ -2,7 +2,7 @@
 import { firebaseAdmin } from "../../../../FirebaseAdmin";
 import nookies from "nookies";
 import {React, useEffect, useRef, useState} from "react"
-
+import Image from 'next/image'
 import { firebaseClient } from "../../../../FirebaseIntialization";
 import Checkbox from '@material-ui/core/Checkbox';
 import Slider from '@material-ui/core/Slider';
@@ -334,6 +334,20 @@ const [existingText, setexistingText] = useState(props.Texts);
      setTextColor(value)
              
      }, 200) ;
+
+     const ChangingSriesTitle = _debounce((e) => {
+
+      if(e.target.value.length > 55 ){
+        setError(true)
+         console.log("too Long 7bb <3")
+         setseriesTitle("")
+       }
+       else{
+        console.log(e.target.value)
+        setseriesTitle(e.target.value)
+     
+       }
+     }, 400)
              
      
      const recentTrades  = ( 
@@ -469,8 +483,7 @@ const [existingText, setexistingText] = useState(props.Texts);
          legend, xAxis, yAxis, color, 
          tooltipcolor, tooltiptextcolor, 
          axisColor, googleSheetKey,
-         googleSheetNumber,googleSheetStartColumn,
-         googleSheetEndColumn,googleSheetStartRow, [...data], 
+          [...data], 
          seriestitle ]}
         type={type} title={title} seriestitle={seriestitle}
         legend={legend} xAxis={xAxis} 
@@ -702,18 +715,7 @@ id="inputseriestitle"
    type="text" 
    value={seriestitle} 
    placeholder="Series Title (Optional)" 
-   onInput={ (e) => { 
-     if(e.target.value.length > 55 ){
-      setError(true)
-       console.log("too Long 7bb <3")
-       setseriesTitle("")
-     }
-     else{
-      console.log(e.target.value)
-      setseriesTitle(e.target.value)
-   
-     }
-   }} />
+   onInput={ChangingSriesTitle} />
 
 {!GoogleSheets ? 
  
@@ -738,7 +740,9 @@ id="inputseriestitle"
 
 :
 
+<>
 <div className="DataBoxbody2" >
+
 <p>Google Sheet Key</p>
 <input className="InputGoogleSheetsKey" 
 id="InputGoogleSheetsKey"
@@ -788,10 +792,37 @@ id="InputGoogleSheetStartRow"
 
 </div>
 
+<div className="DataBoxbody3">
+
+
+<p>1eK264_It9ezV8g1Ah_PROiOiOMkKg3KYszvcNHbjso0 </p>
+
+<p>1</p>
+
+<p>0</p>
+<p>1</p>
+
+<p>0</p>
+
+</div>
+
+<div className="DataBoxbody4">
+<p>Demo Example</p>
+<span>
+<a href="https://docs.google.com/spreadsheets/d/1eK264_It9ezV8g1Ah_PROiOiOMkKg3KYszvcNHbjso0/edit#gid=0" target="
+       _blank"> 
+        <Image
+        src="/google-sheets.svg"
+        alt="Google-Sheets"
+        width={75} height={65}  
+        />
+        </a>
+        </span>
+</div>
+
+</>
+
 }
-
-
-
 
 </Modal.Body>
 

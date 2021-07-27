@@ -223,6 +223,19 @@ setTextColor(value)
         
 }, 200) ;
         
+const ChangingSriesTitle = _debounce((e) => {
+
+  if(e.target.value.length > 55 ){
+    setError(true)
+     console.log("too Long 7bb <3")
+     setseriesTitle("")
+   }
+   else{
+    console.log(e.target.value)
+    setseriesTitle(e.target.value)
+ 
+   }
+ }, 400)
 
 const recentTrades  = ( 
 <>
@@ -357,8 +370,6 @@ style={{color:"#c7c9d3",
     legend, xAxis, yAxis, color, 
     tooltipcolor, tooltiptextcolor, 
     axisColor, [...data], googleSheetKey,
-    googleSheetNumber,googleSheetStartColumn,
-    googleSheetEndColumn,googleSheetStartRow,
     seriestitle ]}
    type={type} title={title} seriestitle={seriestitle}
    legend={legend} xAxis={xAxis} 
@@ -590,18 +601,7 @@ id="inputseriestitle"
    type="text" 
    value={seriestitle} 
    placeholder="Optional" 
-   onInput={ (e) => { 
-     if(e.target.value.length > 55 ){
-      setError(true)
-       console.log("too Long 7bb <3")
-       setseriesTitle("")
-     }
-     else{
-      console.log(e.target.value)
-      setseriesTitle(e.target.value)
-   
-     }
-   }} />
+   onInput={ChangingSriesTitle} />
 
 {!GoogleSheets ? 
  
@@ -704,6 +704,7 @@ id="InputGoogleSheetStartRow"
         </a>
         </span>
 </div>
+
 </>
 
 

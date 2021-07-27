@@ -97,6 +97,7 @@ return (
 
 <GoogleButton 
 className="Google-Button"
+label='Sign Up with Google'
   onClick={ async () => { 
     await  firebaseClient.auth()
     .signInWithPopup(provider)
@@ -129,6 +130,7 @@ className="Google-Button"
 
 <GithubButton
 className="Github-Button"
+label='Sign up with Github'
   onClick={ async () => { 
     await  firebaseClient.auth()
     .signInWithPopup(providerGithub)

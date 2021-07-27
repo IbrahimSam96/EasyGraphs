@@ -322,12 +322,12 @@ title={''}
 </LinkedinShareButton>
 
 
- 
 </div>
+
 
 <span className="EditInfo"> <a href={`/edit/${props.uid}/${props.routeG}`}> Edit </a></span>
 
-<span className="EditInfo2"> <VisibilityIcon /> </span>
+<span className="EditInfo2"> {layout.views} <VisibilityIcon /> </span>
 
 
 
