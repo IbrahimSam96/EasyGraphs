@@ -287,7 +287,7 @@ return (
 
 )}
 
-export default LivePortfolioGraph
+export default React.memo(LivePortfolioGraph)
 
 
 
