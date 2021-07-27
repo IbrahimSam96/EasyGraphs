@@ -6,9 +6,8 @@ import ReactDOM from "react-dom"
 
 const  LivePortfolioGraph = (props) => {
 
-useEffect(() => {
 
-        console.log(props.g.current.children.length)
+useEffect(() => {
         
             if(props.g.current.children.length > 2){
         
@@ -17,8 +16,6 @@ useEffect(() => {
                 };
             
 }, [props.g.current])
-
-
 
 
 const otherOptions = {
@@ -78,9 +75,11 @@ const options = {
 }
 
 
+
 const chart = React.useRef(createChart(props.g.current, options) ); 
 
 const areaSeries = React.useRef(chart.current.addAreaSeries(otherOptions) );
+ 
 
 areaSeries.current.setData([
     { time: '2019-04-11', value: 80.01 },
@@ -185,9 +184,7 @@ window.removeEventListener('resize', handleResize);
             });              
                 }    
                  
- const element = 
- 
-        
+ const element =       
 <>
         <span>
         <input 
@@ -271,10 +268,8 @@ document.getElementById("customization")
 
 
 
-
-
-
 return (
+
 <>
 <div style={{position:"relative", left:"5%", height:"100%", width:"100%", display:"none"}}>
 

@@ -14,8 +14,6 @@ import { firebaseAdmin } from "../FirebaseAdmin";
 import LineGraph from "../Components/Linegraph"
 import BarGraph from "../Components/GoogleSheets"
 import _debounce from 'lodash.debounce';
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 
 const LivePortfolioGraph = dynamic( () => {
@@ -75,9 +73,7 @@ db.collection("Users").doc(uid).set({
 const Main = (props) => {
 
 
-  console.log(props)
-
-
+  
   if(props.token) {
 
     if(props.token.name){
@@ -166,8 +162,10 @@ const Main = (props) => {
         </div>
 
         <div ref={g} className="FinancialChartIntro" > 
+       
 
-        <LivePortfolioGraph g={g}  />
+
+        <LivePortfolioGraph g={g}   />
 
         </div> 
 
