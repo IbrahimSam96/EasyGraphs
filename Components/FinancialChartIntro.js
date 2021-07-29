@@ -19,9 +19,9 @@ useEffect(() => {
 
 
 const otherOptions = {
-topColor: "#0f7589",
+topColor: "#00000",
 bottomColor: "#031636",
-lineColor: '#f4a11e',
+lineColor: '#f41f6a',
 lineWidth: 2,
 crossHairMarkerVisible: false,
 }
@@ -31,7 +31,7 @@ const options = {
     height: 0,
     layout: {
     textColor: "#d1d4dc",
-    backgroundColor: "#141d27",
+    backgroundColor: "#072241",
     },
     rightPriceScale: {
         scaleMargins: {
