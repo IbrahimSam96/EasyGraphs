@@ -304,27 +304,6 @@ return (
 </div>
 
 
-<div className="CreatorInfo">
-
-<TwitterShareButton
-  url={`https://easy-graphs.vercel.app/${props.routeU}/${props.routeG}`} 
-  title={''}
->
-  <TwitterIcon size={42} round />
-</TwitterShareButton>
-
-
-<LinkedinShareButton   
-url={`https://easy-graphs.vercel.app/${props.routeU}/${props.routeG}`}
-title={''}
->
-  <LinkedinIcon size={42} round />
-</LinkedinShareButton>
-
-
-</div>
-
-
 <span className="EditInfo"> <a href={`/edit/${props.uid}/${props.routeG}`}> Edit </a></span>
 
 <span className="EditInfo2"> {layout.views} <VisibilityIcon /> </span>

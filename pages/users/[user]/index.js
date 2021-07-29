@@ -7,6 +7,13 @@ import CloseIcon from '@material-ui/icons/Close';
 import { firebaseClient } from "../../../FirebaseIntialization";
 
 import React, { useEffect, useState, useRef } from "react";
+import {
+  TwitterShareButton,
+  TwitterIcon,
+  LinkedinShareButton,
+  LinkedinIcon
+} from 'next-share'
+
 
 export const getServerSideProps = async (context) => {
 
@@ -182,16 +189,6 @@ props.userexists ?
 
 <div className="ProfilepageUser">
 
-{
-props.userinfo[0].name ? 
-
-<a href={`${props.userinfo[0].uid}`}>{props.userinfo[0].name.split(" ")[0]} </a>
-
-:
-<a href={`${props.userinfo[0].uid}`}>  {props.userinfo[0].email}   </a>
-
-}
-
 
 <span> <AddIcon /> <a href="/create"> New Dashboard</a>  </span>
 
@@ -240,7 +237,22 @@ if(window !== "undefined") {
 }} ></CloseIcon> </span>
 
 <span> </span>
+<span>
+<TwitterShareButton
+  url={`https://easy-graphs.vercel.app/${props.uid}/${obj.dashboard}`} 
+  title={''}
+>
+<TwitterIcon size={20} round />
+</TwitterShareButton>
 
+
+<LinkedinShareButton   
+url={`https://easy-graphs.vercel.app/${props.uid}/${obj.dashboard}`}
+title={''}
+>
+  <LinkedinIcon size={20} round />
+</LinkedinShareButton>
+</span>
 </div>
   ))
 
