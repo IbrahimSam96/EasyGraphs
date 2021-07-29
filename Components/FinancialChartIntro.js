@@ -190,7 +190,7 @@ window.removeEventListener('resize', handleResize);
         <input 
         id="colorpicker" 
         type="color" 
-        defaultValue="#141d27"
+        defaultValue="#072241"
         onChange={Chnageme} 
          />
         
@@ -204,7 +204,7 @@ window.removeEventListener('resize', handleResize);
         <input 
         id="colorpicker1" 
         type="color" 
-        defaultValue="#f4a11e"
+        defaultValue="#f41f6a"
         onChange={Chnageme1} 
          />
         
@@ -220,7 +220,7 @@ window.removeEventListener('resize', handleResize);
         <input 
         id="colorpicker2" 
         type="color" 
-        defaultValue='#0f7589'
+        defaultValue='#00000'
         onChange={Chnageme2} 
          />
         
