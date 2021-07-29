@@ -19,7 +19,7 @@ useEffect(() => {
 
 
 const otherOptions = {
-topColor: "#00000",
+topColor: "#000000",
 bottomColor: "#031636",
 lineColor: '#f41f6a',
 lineWidth: 2,
@@ -220,7 +220,7 @@ window.removeEventListener('resize', handleResize);
         <input 
         id="colorpicker2" 
         type="color" 
-        defaultValue='#00000'
+        defaultValue='#000000'
         onChange={Chnageme2} 
          />
         
@@ -280,7 +280,7 @@ return (
 
 )}
 
-export default React.memo(LivePortfolioGraph)
+export default LivePortfolioGraph
 
 
 
