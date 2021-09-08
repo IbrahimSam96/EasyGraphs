@@ -79,6 +79,7 @@ const [option, setOption] = useState({
     }, 
     data: {
         googleSpreadsheetKey: props.gk,
+        googleAPIKey: 'AIzaSyBexUOGa1JtQ1ZI7-29gUBUQkHL_GBmOpA',
         googleSpreadsheetWorksheet:props.gs,
         startColumn: props.gsc,
         endColumn: props.gec,
