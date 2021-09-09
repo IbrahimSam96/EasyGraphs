@@ -1777,7 +1777,7 @@ a {
   .landing-intro {
     grid-column: 1/13;
     grid-row: 2/6;
-    box-shadow: rgba(0, 0, 0, .5) 0px 0px 20px 0px;
+    box-shadow: rgba(196, 183, 183, 0.5) 0px 0px 20px 0px;
     display: grid;
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: repeat(7, 1fr);
