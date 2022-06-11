@@ -82,9 +82,6 @@ export const getServerSideProps = async (context) => {
 
   
 const CreateDynamic = (props) => {
-
-  
-
 //Modal Options
 const [show , setShow] = useState(false); 
 const [show2 , setShow2] = useState(false); 
