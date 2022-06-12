@@ -2,7 +2,7 @@
 
 A web-based graph generator and dahsboard maker. 
 
-<img src="https://github.com/IbrahimSam96/EasyGraphs/blob/main/public/Logo.png" width="750">
+<img src="https://github.com/IbrahimSam96/EasyGraphs/blob/main/public/Logo.png" width="1000">
 
 ## Authors
 
