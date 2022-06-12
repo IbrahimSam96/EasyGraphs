@@ -2,8 +2,7 @@
 
 A web-based graph generator and dahsboard maker. 
 
-![Logo]([https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png](https://github.com/IbrahimSam96/EasyGraphs/blob/main/public/Logo.png))
-
+<img src="https://github.com/IbrahimSam96/EasyGraphs/public/logo.png" width="25">
 
 ## Authors
 
